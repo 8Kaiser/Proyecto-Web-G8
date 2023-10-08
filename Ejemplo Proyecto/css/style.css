@@ -173,3 +173,76 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+body {
+    font-family: 'Nombre de Fuente', sans-serif;
+}
+
+
+/* Flexbox */
+
+#cajas1{
+    width: 80%;
+    max-width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    }
+    .flex-item{
+        padding: 2%;
+        background-color: rgb(255, 187, 0);
+        margin-bottom: 10px;
+        width: 24%;
+    }
+    /* .flex-container div:last-child{
+        width: 100%;
+    } */
+
+/* Media Queries
+@media disp operador (propiedad:valor){
+    --
+} 
+*/
+
+/* dispositivos pequeños */
+@media screen and (min-width:0px) and (max-width:672px){
+    
+    body{
+        background-color: aqua;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+    #cajas1{width: 90%;}
+
+    .flex-container{
+        flex-direction: column;
+        }
+        .flex-item{
+            width: 100%;
+        }
+    
+}
+/* dispositivos medianos */
+@media screen and (min-width:673px) and (max-width:990px) {
+    body{
+        background-color: rgb(4, 0, 255);
+    }
+
+    .flex-item{width: 49%;}
+}
+
+/* dispositivos grandes */
+@media screen and (min-width: 991px) and (max-width: 1296px) {
+        body{
+        background-color: rgb(26, 255, 0);
+    }
+}
