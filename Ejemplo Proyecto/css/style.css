@@ -16,6 +16,10 @@ body, header, main, footer {
     margin: 0.5rem;
     min-width: 400px;
 }
+button{
+    background-color: red;
+    font-size: large;
+}
 
 header{
     background: rgb(240, 240, 177);;
@@ -246,3 +250,28 @@ body {
         background-color: rgb(26, 255, 0);
     }
 }
+
+.advertencia-oculta {
+    display: none;
+  }
+/* Estilo para el contenedor del video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Esto mantiene una relación de aspecto de 16:9 para el contenedor */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Estilo para el video dentro del contenedor */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  
+  
+
+  
